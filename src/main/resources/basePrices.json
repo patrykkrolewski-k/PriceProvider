@@ -1,0 +1,17 @@
+{
+  "c5ebfecd-36c0-42d4-b4e9-a93e65b58a56" : {
+    "productUuid" : "c5ebfecd-36c0-42d4-b4e9-a93e65b58a56",
+    "name" : "product name1",
+    "basePrice" : 20
+  },
+  "abd56889-34c1-4730-a0e5-df3918e13b0d" : {
+    "productUuid" : "abd56889-34c1-4730-a0e5-df3918e13b0d",
+    "name" : "product name2",
+    "basePrice" : 12.44
+  },
+  "31fa9e08-1eaa-4e95-945e-ebc5bb7cde35" : {
+    "productUuid" : "31fa9e08-1eaa-4e95-945e-ebc5bb7cde35",
+    "name" : "product name3",
+    "basePrice" : 0.29
+  }
+}

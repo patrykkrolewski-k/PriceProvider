@@ -1,0 +1,8 @@
+discount:
+  amountbased:
+    10: 2.0
+    100: 5.5
+    200: 7.25
+  percentagebased:
+    10: 0.03
+    50: 0.05

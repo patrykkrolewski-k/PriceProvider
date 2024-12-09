@@ -28,8 +28,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest
 @ComponentScan(basePackages = "com.example.priceprovider.service.impl")
 public class ProductPriceControllerTest {
-    private final static String UUID_STRING = "test uuid";
-    private final static UUID TEST_UUID = UUID.nameUUIDFromBytes(UUID_STRING.getBytes());
+    private final static String UUID_STRING = "c5ebfecd-36c0-42d4-b4e9-a93e65b58a56";
+    private final static UUID TEST_UUID = UUID.fromString(UUID_STRING);
 
 
     private static final ProductPriceRequest PRICE_REQUEST = new ProductPriceRequest(List.of(
@@ -50,7 +50,7 @@ public class ProductPriceControllerTest {
                         .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
-                .andExpect(jsonPath("discountBids[0].product.name").value("test-name")).andReturn();
+                .andExpect(jsonPath("discountBids[0].product.name").value("product name1")).andReturn();
     }
 
     private String convertObjectToJsonString(ProductPriceRequest request) throws JsonProcessingException {
